@@ -15,6 +15,8 @@ Global css
     --rgba: rgba(0,0,0,0.08);
     --white-blue: #d8dfe8;
     --medium-blue:#0a38718a;
+    --gray:#343A40;
+    --gree:#495057;
 }
 
 *{
@@ -78,7 +80,7 @@ main{
     height: 288px;
     font-weight: 400;
     font-size: 32px;
-    line-height: 38px;
+    line-height: 48px;
     outline: none;
     border: 1px solid var(--greey);
     border-radius: 15px;
@@ -138,7 +140,7 @@ main{
 
 .btn-encriptar:active{
     box-shadow: inset 2px 2px 4px var(--font);
-    inset: -3 -4 8px var(--darkblue);
+    inset: -3px -4px 8px var(--darkblue);
     color: var(--white-blue);
 }
 
@@ -159,10 +161,16 @@ main{
     box-shadow: 0px 20px 29px -5px var(--rgba);
 }
 
-.btn-copiar:active,
+
 .btn-desencriptar:active{
     box-shadow: inset 2px 2px 4px var(--darkblue);
     inset: -3px -4px 8px var(--font);
+    color: var(--medium-blue);
+}
+
+
+.btn-copiar:active {
+    box-shadow: inset 2px 2px 4px var(--darkblue);
     color: var(--medium-blue);
 }
 
@@ -211,7 +219,7 @@ main{
 .evaluar{
     width: 100%;
     height: 485px;
-    /*position: absolute;*/
+    position: absolute;
     padding: 20px;
     top: 0;
     left: 0;
@@ -227,15 +235,15 @@ main{
 }
 
 .evaluar:focus{
-    outline: none;   
+    outline: none;
 }
 
 .btn-copiar{
     width: 224px;
     height: 67px;
-    margin: -1px;
-    position: static;
-    bottom: 28px;
+    margin: 23px;
+    position: absolute;
+    bottom: 0;
     left: 0;
     visibility: hidden;
     padding: 24px;
